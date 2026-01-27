@@ -1,28 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calculator</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Modern Calculator</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-        <div>
-            <input type="number" name="" id="number" height="500px">
-            <ul>
-                <li><button>C</button></li>
-                <li><button>+/-</button></li>
-                <li><button></button></li>
-                <li><button></button></li>
-                <li><button></button></li>
-                <li><button></button></li>
-                <li><button></button></li>
-                <li><button></button></li>
-                <li><button></button></li>
-                <li><button></button></li>
-                <li><button></button></li>
-            </ul>
-        </div>
+
+  <div class="calculator">
+    <div class="display">
+      <span id="previous"></span>
+      <span id="current">0</span>
     </div>
+
+    <div class="buttons">
+      <button class="control">AC</button>
+      <button class="control">DEL</button>
+      <button class="operator">%</button>
+      <button class="operator">÷</button>
+
+      <button>7</button>
+      <button>8</button>
+      <button>9</button>
+      <button class="operator">×</button>
+
+      <button>4</button>
+      <button>5</button>
+      <button>6</button>
+      <button class="operator">−</button>
+
+      <button>1</button>
+      <button>2</button>
+      <button>3</button>
+      <button class="operator">+</button>
+
+      <button class="zero">0</button>
+      <button>.</button>
+      <button class="equals">=</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>

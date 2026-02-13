@@ -68,6 +68,8 @@
   align-items: flex-end;
   padding: 10px;
   word-wrap: break-word;
+  overflow-x: scroll;
+  overflow: hidden;
 }
 
 #previous {

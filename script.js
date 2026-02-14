@@ -79,13 +79,7 @@ function deleteLast() {
 }
 
 function updateDisplay() {
-  let displayValue = currentValue || "0";
-
-  // If number is too long, convert to scientific notation
-  if (displayValue.length > 10 && !isNaN(displayValue)) {
-    displayValue = Number(displayValue).toExponential(5);
-  }
-
+  const displayValue = currentValue || "0";
   current.textContent = displayValue;
   previous.textContent = operator ? `${previousValue} ${operator}` : "";
 }
